@@ -1,0 +1,72 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+//fiding largest in an array
+//take size into account
+int main()
+{
+    
+    int list[6]={1,5,2,7,3,11};
+    int unused[6]={};
+    int frst,scnd,largest;
+    
+    
+    
+
+    
+for(int k=0;k<6;k++){
+scnd = 0;
+    for(int i=0;i<6;i++){
+        frst = list[i];     //tking 1st value
+      
+        
+        
+        if(frst>scnd){      //comparing 1st to default second, assign t largeset if needed
+            largest = frst;
+            
+        } else continue;
+        
+        scnd = list[i+1]; //takingnew second value repeat same procedure
+       
+        if(scnd>frst){largest = scnd;
+                        
+        } else continue;
+        
+    }
+    
+   cout << "largest is " << largest<<endl;
+   
+   for(int i=0;i<6;i++){
+       if(list[i]==largest){list[i]=0;} //rplacing largest witj 0
+       
+   }
+   
+  unused[k]=largest;
+
+    for (int a=0;a<6;a++){      //checking
+        cout << unused[a]<<endl;
+        
+    }
+
+    
+    
+}
+return 0;
+}
+
+    
+    
+    
+    
+
+    
+    
